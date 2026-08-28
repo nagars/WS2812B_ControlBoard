@@ -16,7 +16,8 @@ A WS2812B LED Power supply and control board that can support power consumption 
 - As a result, in this configuration one can run a 300 LED strip at around 3A.
 
 ### Key Features
-* **Integrated Power Management:** Safely splits 5V power supply between the high-current LED strip and the ESP32.
+* **Integrated Power Management:** Safely splits 5V power supply between the high-current LED strip and the ESP32. Schottkey diode allows ESP32 to be powered by USB without powering other circuitry.
+* **Blowout Protection:** 3.5A fuse prevents power supply from burning out.
 * **ESP32 Powered:** Leverage built-in Wi-Fi and Bluetooth to connect your LED project to smart home ecosystems (WLED, Home Assistant, ESPHome).
 * **Logic Level Shifting:** Level shifter to bump ESP32's 3.3V GPIO data signal to the 5V signal required by WS2812B strips (prevents flickering and data corruption over longer distances).
 * **Decoupling Protection:** large electrolytic capacitors to absorb sudden voltage spikes that could damage the LEDs.
