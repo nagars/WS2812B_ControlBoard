@@ -1,0 +1,220 @@
+(footprint "CONV_IRM-20-5"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -22.246425 -14.873355 0)
+		(layer "F.SilkS")
+		(uuid "77cece36-7460-4ba4-8085-e99172383650")
+		(effects
+			(font
+				(size 1.401346 1.401346)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CONV_IRM-20-5"
+		(at -15.124255 14.742935 0)
+		(layer "F.Fab")
+		(uuid "f0e1dbc5-77fe-4543-8efc-144b64a8051d")
+		(effects
+			(font
+				(size 1.401047 1.401047)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98ea09a9-45e4-41e0-9d44-100826fc3b5a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2992eb7d-f1d3-4398-81ee-a093b5297ba1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -26.2 -13.6)
+		(end 26.2 -13.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "450b240e-a101-46fa-b67f-209982fb2a07")
+	)
+	(fp_line
+		(start -26.2 13.6)
+		(end -26.2 -13.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "17cb98b7-cce2-4e2c-868b-7e127b07e54e")
+	)
+	(fp_line
+		(start 26.2 -13.6)
+		(end 26.2 13.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1cae7644-5804-465e-a24d-76f9005079a4")
+	)
+	(fp_line
+		(start 26.2 13.6)
+		(end -26.2 13.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5215b8f2-7727-404a-b9d7-fff42235eed3")
+	)
+	(fp_line
+		(start -26.45 -13.85)
+		(end 26.45 -13.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "87afee38-fda5-4e1b-826a-f8f761ae2b10")
+	)
+	(fp_line
+		(start -26.45 13.85)
+		(end -26.45 -13.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7f421b7d-7ed6-42ec-97d1-d1f4b23b7007")
+	)
+	(fp_line
+		(start 26.45 -13.85)
+		(end 26.45 13.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bca29aed-b83f-46cc-9fa2-d7ccaa9bb0cc")
+	)
+	(fp_line
+		(start 26.45 13.85)
+		(end -26.45 13.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f8cfa0e6-ca58-435a-be3f-d8652f9d9a26")
+	)
+	(fp_line
+		(start -26.2 -13.6)
+		(end 26.2 -13.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fcc28835-7307-4a8e-b963-ba7cf73795f2")
+	)
+	(fp_line
+		(start -26.2 13.6)
+		(end -26.2 -13.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bcf65e0f-2247-4494-9c4f-ec6cf149b384")
+	)
+	(fp_line
+		(start 26.2 -13.6)
+		(end 26.2 13.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f2da2a79-95c6-4b9a-b1c9-790d0492b060")
+	)
+	(fp_line
+		(start 26.2 13.6)
+		(end -26.2 13.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c83b3d3c-f92f-408b-996c-0b03d7fdae2c")
+	)
+	(pad "1" thru_hole circle
+		(at -22.8 -10.4)
+		(size 1.86 1.86)
+		(drill 1.24)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "3c632bf3-7519-43d9-bd8f-e66a193bea31")
+	)
+	(pad "2" thru_hole circle
+		(at -22.8 10.4)
+		(size 1.86 1.86)
+		(drill 1.24)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "ebde5d48-2eb2-41fd-ae9f-20f724825b97")
+	)
+	(pad "3" thru_hole circle
+		(at 22.2 10.4)
+		(size 1.86 1.86)
+		(drill 1.24)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "cdf2164a-d0eb-43f8-932d-0d6e7df5ab61")
+	)
+	(pad "4" thru_hole circle
+		(at 22.2 2.4)
+		(size 1.86 1.86)
+		(drill 1.24)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "3651e423-aba2-4ad3-bf05-81bd5c6f9360")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/stepfiles/IRM-20-5.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
