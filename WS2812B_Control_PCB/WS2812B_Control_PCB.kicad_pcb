@@ -11520,7 +11520,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "5V"
+	(gr_text "5V\n"
 		(at 17.653 63.627 0)
 		(layer "F.SilkS")
 		(uuid "6fba2b9c-cc6d-46a5-8ddb-ac543011d3d6")
@@ -11533,8 +11533,21 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "4A"
+		(at 20.701 63.627 0)
+		(layer "F.SilkS")
+		(uuid "fb55268e-8158-450b-a8b9-9441c9b33a09")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "VOUT"
-		(at 21.082 63.627 0)
+		(at 23.749 63.627 0)
 		(layer "F.SilkS")
 		(uuid "3b38bcf5-2586-4c1e-893f-e80b697e9f5c")
 		(effects
@@ -11597,8 +11610,8 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "IRM-20-5"
-		(at 61.087 64.897 270)
+	(gr_text "IRM-20-5\n20W 5V"
+		(at 60.96 60.96 270)
 		(layer "B.SilkS")
 		(uuid "5b741a6f-9ef4-4775-be49-6d900481e083")
 		(effects
