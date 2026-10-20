@@ -1616,8 +1616,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 20.32 10.16 0)
+			(property "Reference" "U1"
+				(at 20.32 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1627,7 +1627,7 @@
 				)
 			)
 			(property "Value" "IRM-20-5"
-				(at 20.32 7.62 0)
+				(at 20.32 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1742,10 +1742,12 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "IRM-20-5_1_1"
 				(pin power_in line
 					(at 0 0 0)
 					(length 7.62)
-					(name "-V"
+					(name "AC/L"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1763,7 +1765,7 @@
 				(pin power_in line
 					(at 0 -2.54 0)
 					(length 7.62)
-					(name "+V"
+					(name "AC/N"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1781,7 +1783,7 @@
 				(pin unspecified line
 					(at 40.64 -2.54 180)
 					(length 7.62)
-					(name "AC/L"
+					(name "-V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1799,7 +1801,7 @@
 				(pin unspecified line
 					(at 40.64 0 180)
 					(length 7.62)
-					(name "AC/N"
+					(name "+V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3684,7 +3686,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 90.17) (xy 69.85 90.17)
+			(xy 53.34 90.17) (xy 68.58 90.17)
 		)
 		(stroke
 			(width 0)
@@ -3944,6 +3946,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 92.71) (xy 114.3 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "540f7560-efc3-417b-aa48-ea7ab814bdf4")
+	)
+	(wire
+		(pts
 			(xy 153.67 90.17) (xy 153.67 92.71)
 		)
 		(stroke
@@ -3984,7 +3996,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 92.71) (xy 69.85 92.71)
+			(xy 53.34 92.71) (xy 68.58 92.71)
 		)
 		(stroke
 			(width 0)
@@ -4161,6 +4173,16 @@
 			(type default)
 		)
 		(uuid "8277efda-8f76-4651-a3ff-f5a8c8ac9772")
+	)
+	(wire
+		(pts
+			(xy 114.3 92.71) (xy 114.3 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84c5e22f-3af3-4b47-aef0-2510822ee0e9")
 	)
 	(wire
 		(pts
@@ -4484,7 +4506,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 90.17) (xy 114.3 90.17)
+			(xy 109.22 90.17) (xy 114.3 90.17)
 		)
 		(stroke
 			(width 0)
@@ -4684,16 +4706,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 92.71) (xy 110.49 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea135182-1fb9-445a-b82e-77f60c0e422d")
-	)
-	(wire
-		(pts
 			(xy 149.86 48.26) (xy 152.4 48.26)
 		)
 		(stroke
@@ -4771,16 +4783,6 @@
 			(type default)
 		)
 		(uuid "fc55d2bc-ed8a-46dc-a29c-0341d29029b3")
-	)
-	(wire
-		(pts
-			(xy 114.3 97.79) (xy 114.3 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "feeea50b-69ae-4b0b-b788-9f66e256c23e")
 	)
 	(symbol
 		(lib_id "WS2812Board:113991254")
@@ -7772,7 +7774,7 @@
 	)
 	(symbol
 		(lib_id "WS2812Board:IRM-20-5")
-		(at 110.49 92.71 180)
+		(at 68.58 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7782,7 +7784,7 @@
 		(dnp no)
 		(uuid "c86850b7-acdc-4fea-99c3-30623b0288f6")
 		(property "Reference" "U1"
-			(at 90.17 80.01 0)
+			(at 88.9 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7792,7 +7794,7 @@
 			)
 		)
 		(property "Value" "IRM-20-5"
-			(at 90.17 82.55 0)
+			(at 88.9 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7802,7 +7804,7 @@
 			)
 		)
 		(property "Footprint" "WS2812Board:CONV_IRM-20-5"
-			(at 110.49 92.71 0)
+			(at 68.58 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7814,7 +7816,7 @@
 			)
 		)
 		(property "Datasheet" "IRM-20-5"
-			(at 110.49 92.71 0)
+			(at 68.58 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7826,7 +7828,7 @@
 			)
 		)
 		(property "Description" "AC/DC CONVERTER 5V 20W"
-			(at 110.49 92.71 0)
+			(at 68.58 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
