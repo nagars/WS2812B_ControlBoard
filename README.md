@@ -35,8 +35,9 @@ To fully utilize this board, you will need:
 * **Heat Dissipation:** Watch for heating at high power loads.
 
 ### Schematic Layout
-<img width="2245" height="1587" alt="WS2812B_Control_PCB" src="https://github.com/user-attachments/assets/4abc7f95-122d-49fc-8e54-8f9e2fe588da" />
+<img width="1123" height="794" alt="output" src="https://github.com/user-attachments/assets/63d53e14-e29a-42fd-a11c-885763c60fae" />
+
 
 ### PCB Layout
-<img width="594" height="339" alt="Screenshot from 2026-08-28 14-38-51" src="https://github.com/user-attachments/assets/7500d09f-f4f9-4134-8188-24fb1301a756" />
+<img width="585" height="312" alt="Screenshot from 2026-10-22 17-07-48" src="https://github.com/user-attachments/assets/31facee6-d8b3-42e8-a61e-038e2a3d2bcc" />
 
