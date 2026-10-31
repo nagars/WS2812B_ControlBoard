@@ -34,10 +34,17 @@ To fully utilize this board, you will need:
 * **Double-check polarities:** No AC reverse polarity protection. Follow the silkscreen markers.
 * **Heat Dissipation:** Watch for heating at high power loads.
 
-### Schematic Layout
+### Schematic Layout V1/V2
 <img width="1123" height="794" alt="output" src="https://github.com/user-attachments/assets/63d53e14-e29a-42fd-a11c-885763c60fae" />
 
-
-### PCB Layout
+### PCB Layout V1/V2
 <img width="585" height="312" alt="Screenshot from 2026-10-22 17-07-48" src="https://github.com/user-attachments/assets/31facee6-d8b3-42e8-a61e-038e2a3d2bcc" />
+
+### Schematic Layout V3
+<img width="1128" height="804" alt="image" src="https://github.com/user-attachments/assets/49a4e4c2-b702-4dee-9f15-904f58722b6c" />
+
+
+### PCB Layout V3
+<img width="676" height="369" alt="Screenshot from 2026-10-31 11-30-17" src="https://github.com/user-attachments/assets/06422ac6-2776-4a14-b55b-e1645fa6287c" />
+
 
