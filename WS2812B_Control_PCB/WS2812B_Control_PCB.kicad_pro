@@ -64,7 +64,7 @@
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
-          "remove_islands": 0,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -540,6 +540,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -814,7 +815,7 @@
         "uuid": "4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
       }
     ],
-    "used_designators": "S1,R1-5,H1-4,RC0402FR\\-07470RL1-5,C1-9,CR1,#PWR1-14,J1-9,F1,U1-4",
+    "used_designators": "#PWR1-18,C1-9,CR1,F1,H1-4,J1-9,M1-2,R1-5,RC0402FR\\-07470RL1-5,S1,U1-4",
     "variants": []
   },
   "sheets": [

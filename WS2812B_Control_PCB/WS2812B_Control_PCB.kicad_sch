@@ -1607,60 +1607,33 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "WS2812Board:IRM-20-5"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "WS2812Board:JW5068A_Module"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U1"
-				(at 20.32 -12.7 0)
+			(property "Reference" "M"
+				(at 0 1.524 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "IRM-20-5"
-				(at 20.32 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "WS2812Board:CONV_IRM-20-5"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
-			(property "Datasheet" "IRM-20-5"
+			(property "Value" "JW5068A_Module /Mini 560"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
-			(property "Description" "AC/DC CONVERTER 5V 20W"
+			(property "Footprint" "WS2812Board:JW5068A_Module"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1671,7 +1644,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "IRM-20-5"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1682,7 +1655,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "IRM-20-5_MWU"
+			(property "Description" "DC Step Down Converter 7-20V to 5V, Mini 560 Buck Converter 4A Synchronous Voltage Regulator Module"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1693,49 +1666,13 @@
 					)
 				)
 			)
-			(symbol "IRM-20-5_0_1"
+			(symbol "JW5068A_Module_0_1"
 				(polyline
 					(pts
-						(xy 7.62 5.08) (xy 7.62 -7.62)
+						(xy -5.08 -1.27) (xy 5.08 -1.27) (xy 5.08 -7.62) (xy -5.08 -7.62) (xy -5.08 -1.27)
 					)
 					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 33.02 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 33.02 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 33.02 -7.62) (xy 33.02 5.08)
-					)
-					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1743,14 +1680,14 @@
 					)
 				)
 			)
-			(symbol "IRM-20-5_1_1"
+			(symbol "JW5068A_Module_1_1"
 				(pin power_in line
-					(at 0 0 0)
-					(length 7.62)
-					(name "AC/L"
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "GND"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.762 0.762)
 							)
 						)
 					)
@@ -1763,12 +1700,12 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "AC/N"
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "VIN"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.762 0.762)
 							)
 						)
 					)
@@ -1780,13 +1717,13 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 40.64 -2.54 180)
-					(length 7.62)
-					(name "-V"
+				(pin power_out line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "Vout"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.762 0.762)
 							)
 						)
 					)
@@ -1798,17 +1735,35 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 40.64 0 180)
-					(length 7.62)
-					(name "+V"
+				(pin power_out line
+					(at -7.62 -5.08 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+				)
+				(pin input line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3309,6 +3264,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "WS2812Board:WCH-CH224K_Module"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "M"
+				(at 0 1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "WCH CH224K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "WS2812Board:WCH CH224K Module"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "QC/PD/AFC USB C Power Supply Modules"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "WCH-CH224K_Module_0_1"
+				(polyline
+					(pts
+						(xy -3.81 -1.27) (xy 3.81 -1.27) (xy 3.81 -11.43) (xy -3.81 -11.43) (xy -3.81 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "WCH-CH224K_Module_1_1"
+				(pin power_out line
+					(at 6.35 -2.54 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 6.35 -5.08 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 6.35 -7.62 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 6.35 -10.16 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -3625,10 +3729,22 @@
 		(uuid "73a11ead-9786-4a99-97c2-e86f19400283")
 	)
 	(junction
+		(at 74.93 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76156e20-d405-4e69-94b9-0ce1330ab171")
+	)
+	(junction
 		(at 139.7 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81d5a4db-a966-4b97-95d2-c1a778cd9d14")
+	)
+	(junction
+		(at 63.5 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97137652-718d-439c-b4af-f657e9fe5d2c")
 	)
 	(junction
 		(at 134.62 134.62)
@@ -3655,10 +3771,10 @@
 		(uuid "de945efb-a513-4bf3-a656-a85f4470fba3")
 	)
 	(junction
-		(at 114.3 97.79)
+		(at 63.5 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dec234e2-3f3d-46b3-b43f-6118a78b253a")
+		(uuid "e8b2572d-83a8-4a45-9a2a-1d05e7d4f5b9")
 	)
 	(no_connect
 		(at 152.4 63.5)
@@ -3684,15 +3800,9 @@
 		(at 246.38 58.42)
 		(uuid "acd6f89c-d4fd-4bcf-b131-c6b35282d280")
 	)
-	(wire
-		(pts
-			(xy 53.34 90.17) (xy 68.58 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0017d070-82de-4463-b336-96270452db8a")
+	(no_connect
+		(at 85.09 85.09)
+		(uuid "e234beac-014e-4c39-9b99-0f567979715c")
 	)
 	(wire
 		(pts
@@ -3703,6 +3813,16 @@
 			(type default)
 		)
 		(uuid "01c3ea7f-6271-4be8-8ef3-29884cc11ae7")
+	)
+	(wire
+		(pts
+			(xy 92.71 92.71) (xy 102.87 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02b53f3e-3a91-4192-b215-c1fa6dd7a949")
 	)
 	(wire
 		(pts
@@ -3773,6 +3893,26 @@
 			(type default)
 		)
 		(uuid "1f56c661-b24a-4da5-97ab-0cc554a8c223")
+	)
+	(wire
+		(pts
+			(xy 102.87 92.71) (xy 102.87 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "241edcf6-0741-4c0f-83fd-afd1e0e85f12")
+	)
+	(wire
+		(pts
+			(xy 102.87 90.17) (xy 114.3 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28c9720f-d597-4e75-9154-98d792df82fb")
 	)
 	(wire
 		(pts
@@ -3866,6 +4006,36 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 80.01) (xy 69.85 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37adf247-2a8c-4a2c-8847-692a7cbafa47")
+	)
+	(wire
+		(pts
+			(xy 63.5 97.79) (xy 63.5 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37afb438-8698-4b3b-b673-438350c34c0b")
+	)
+	(wire
+		(pts
+			(xy 77.47 92.71) (xy 77.47 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37b95c12-ccef-456a-9662-462fbd56202d")
+	)
+	(wire
+		(pts
 			(xy 154.94 101.6) (xy 154.94 95.25)
 		)
 		(stroke
@@ -3883,6 +4053,16 @@
 			(type default)
 		)
 		(uuid "3cd848c8-83db-4edd-ad40-c2724b5c162d")
+	)
+	(wire
+		(pts
+			(xy 93.98 83.82) (xy 96.52 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d46deac-f609-4e72-a56b-56ce19029cd7")
 	)
 	(wire
 		(pts
@@ -3946,16 +4126,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 92.71) (xy 114.3 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "540f7560-efc3-417b-aa48-ea7ab814bdf4")
-	)
-	(wire
-		(pts
 			(xy 153.67 90.17) (xy 153.67 92.71)
 		)
 		(stroke
@@ -3993,16 +4163,6 @@
 			(type default)
 		)
 		(uuid "5f67bdc2-5cad-4a96-aec1-34b6bdb3af87")
-	)
-	(wire
-		(pts
-			(xy 53.34 92.71) (xy 68.58 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61e32dae-ba02-43e4-b840-ef4db6e2fa3f")
 	)
 	(wire
 		(pts
@@ -4096,6 +4256,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 90.17) (xy 93.98 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "704b7c6b-0095-4f61-9b27-b282ea8cf4b2")
+	)
+	(wire
+		(pts
 			(xy 198.12 55.88) (xy 205.74 55.88)
 		)
 		(stroke
@@ -4166,6 +4336,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 77.47) (xy 74.93 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "824858cd-7cb7-46e1-8788-ad5187b3b91a")
+	)
+	(wire
+		(pts
 			(xy 146.05 48.26) (xy 149.86 48.26)
 		)
 		(stroke
@@ -4176,13 +4356,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 92.71) (xy 114.3 97.79)
+			(xy 63.5 90.17) (xy 63.5 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "84c5e22f-3af3-4b47-aef0-2510822ee0e9")
+		(uuid "8385513f-a2db-4546-97a9-d4f25a38405b")
 	)
 	(wire
 		(pts
@@ -4346,6 +4526,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 77.47) (xy 74.93 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7105a6b-3d37-4ea8-89a9-16bbf6970a09")
+	)
+	(wire
+		(pts
 			(xy 246.38 66.04) (xy 251.46 66.04)
 		)
 		(stroke
@@ -4373,6 +4563,16 @@
 			(type default)
 		)
 		(uuid "aa617d2f-4422-47cb-8fde-b61a6b2c413d")
+	)
+	(wire
+		(pts
+			(xy 74.93 90.17) (xy 77.47 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaa96c02-c32c-4767-9e06-e78f00b4ae6d")
 	)
 	(wire
 		(pts
@@ -4506,13 +4706,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 90.17) (xy 114.3 90.17)
+			(xy 63.5 90.17) (xy 74.93 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c43a9365-17c0-4377-9f5f-f5500e74b555")
+		(uuid "c28f4eba-ad99-4756-bea0-ec08271459c0")
 	)
 	(wire
 		(pts
@@ -4606,6 +4806,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 83.82) (xy 93.98 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5bd9dbf-3829-4f20-8648-54b08d5a4096")
+	)
+	(wire
+		(pts
 			(xy 151.13 113.03) (xy 151.13 111.76)
 		)
 		(stroke
@@ -4663,6 +4873,16 @@
 			(type default)
 		)
 		(uuid "dec333cc-6071-4f7b-a534-15b118ad8bcc")
+	)
+	(wire
+		(pts
+			(xy 63.5 95.25) (xy 63.5 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e47ddccf-d257-44bc-a7fe-8873a6b6b479")
 	)
 	(wire
 		(pts
@@ -5281,6 +5501,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 96.52 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a357787-db06-4386-91c2-0062daafbc98")
+		(property "Reference" "#PWR017"
+			(at 96.52 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 96.52 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9f868ecf-7b56-49d7-a842-2db3e1f74f10")
+		)
+		(instances
+			(project "WS2812B_Control_PCB"
+				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 60.96 59.69 0)
 		(unit 1)
@@ -5553,6 +5851,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 77.47 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29b268c5-142d-4f68-ae8e-0ff93411fcf3")
+		(property "Reference" "#PWR016"
+			(at 77.47 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38bf860e-6575-4b83-a86d-ddec3554f345")
+		)
+		(instances
+			(project "WS2812B_Control_PCB"
+				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "WS2812Board:RC0402FR-07470RL")
 		(at 189.23 144.78 90)
 		(unit 1)
@@ -5705,111 +6081,6 @@
 			(project "WS2812B_Control_PCB"
 				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "WS2812Board:TB002-500-02BE")
-		(at 43.18 90.17 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3aa82e30-1045-4482-be0e-8e2dd41681b9")
-		(property "Reference" "J1"
-			(at 43.18 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TB002-500-02BE"
-			(at 43.18 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "WS2812Board:CUI_TB002-500-02BE"
-			(at 43.18 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "TERMINAL BLOCK, SCREW TYPE, 5.00"
-			(at 43.18 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 43.18 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "CUI"
-			(at 43.18 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "2"
-			(uuid "66a4343b-aeae-4aca-8a9a-797623d70688")
-		)
-		(pin "1"
-			(uuid "ba1231ba-419c-4585-bb51-3eff618f9689")
-		)
-		(instances
-			(project "WS2812B_Control_PCB"
-				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -6394,6 +6665,111 @@
 			(project "WS2812B_Control_PCB"
 				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "WS2812Board:TB002-500-02BE")
+		(at 59.69 77.47 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62487b88-196a-4c99-b60d-e9be42bbfdea")
+		(property "Reference" "J9"
+			(at 59.69 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TB002-500-02BE"
+			(at 59.69 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "WS2812Board:CUI_TB002-500-02BE"
+			(at 59.69 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "TERMINAL BLOCK, SCREW TYPE, 5.00"
+			(at 59.69 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 59.69 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "CUI"
+			(at 59.69 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "12c42b57-d52f-4db5-aea3-7195960ac708")
+		)
+		(pin "1"
+			(uuid "0625eb2d-ff49-4934-8078-2e9d01d594d2")
+		)
+		(instances
+			(project "WS2812B_Control_PCB"
+				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -7046,6 +7422,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 63.5 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8525685a-883a-4fbe-bfd4-c73f5af37e76")
+		(property "Reference" "#PWR015"
+			(at 63.5 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3df55641-d2bf-4500-9bb9-9362c9217e19")
+		)
+		(instances
+			(project "WS2812B_Control_PCB"
+				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "WS2812Board:RC0402FR-07470RL")
 		(at 189.23 160.02 90)
 		(unit 1)
@@ -7367,6 +7821,94 @@
 		)
 	)
 	(symbol
+		(lib_id "WS2812Board:JW5068A_Module")
+		(at 85.09 95.25 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9a660e2a-589b-4b5c-a82c-27d8df98be4f")
+		(property "Reference" "M2"
+			(at 85.09 98.298 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JW5068A_Module /Mini 560"
+			(at 85.09 96.266 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "WS2812Board:JW5068A_Module"
+			(at 85.09 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DC Step Down Converter 7-20V to 5V, Mini 560 Buck Converter 4A Synchronous Voltage Regulator Module"
+			(at 85.09 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "1e79fe37-03d5-4d99-8fba-3c30435c7a0d")
+		)
+		(pin "2"
+			(uuid "7ea933b0-8a31-4536-ab42-98f68754ede1")
+		)
+		(pin "5"
+			(uuid "32c2bb55-173f-4145-8652-f376ae4b603b")
+		)
+		(pin "4"
+			(uuid "5c27da1f-603f-4ce2-8f6f-104b6dfc19a1")
+		)
+		(pin "1"
+			(uuid "ab3bfd58-29ee-4d46-b45f-f2a3449288c5")
+		)
+		(instances
+			(project "WS2812B_Control_PCB"
+				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
+					(reference "M2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "WS2812Board:RC0402FR-07470RL")
 		(at 189.23 115.57 90)
 		(unit 1)
@@ -7441,6 +7983,91 @@
 			(project "WS2812B_Control_PCB"
 				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "WS2812Board:WCH-CH224K_Module")
+		(at 57.15 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a529d458-409d-485f-b697-a6ab12b1fc18")
+		(property "Reference" "M1"
+			(at 57.15 84.582 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WCH CH224K"
+			(at 57.15 86.868 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "WS2812Board:WCH CH224K Module"
+			(at 57.15 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "QC/PD/AFC USB C Power Supply Modules"
+			(at 57.15 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "eebc392a-c3d4-48a9-8bed-7966328c2287")
+		)
+		(pin "4"
+			(uuid "6645ce85-9e5b-4b28-98d2-9705874aa967")
+		)
+		(pin "2"
+			(uuid "1f4af3f0-a9f4-4888-b1bd-23b9796dabcc")
+		)
+		(pin "1"
+			(uuid "47c065d8-1229-449d-8a0b-7e679425e632")
+		)
+		(instances
+			(project "WS2812B_Control_PCB"
+				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
+					(reference "M1")
 					(unit 1)
 				)
 			)
@@ -7773,93 +8400,6 @@
 		)
 	)
 	(symbol
-		(lib_id "WS2812Board:IRM-20-5")
-		(at 68.58 90.17 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c86850b7-acdc-4fea-99c3-30623b0288f6")
-		(property "Reference" "U1"
-			(at 88.9 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "IRM-20-5"
-			(at 88.9 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "WS2812Board:CONV_IRM-20-5"
-			(at 68.58 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "IRM-20-5"
-			(at 68.58 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" "AC/DC CONVERTER 5V 20W"
-			(at 68.58 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "26fb2acf-5651-47ea-8c0e-cd7433268041")
-		)
-		(pin "4"
-			(uuid "bafcdc2b-96bc-41a7-9144-c3f1a2f73973")
-		)
-		(pin "1"
-			(uuid "b5024747-a4c2-4b25-92dc-f3309839b55d")
-		)
-		(pin "2"
-			(uuid "1c77b753-3b91-459b-9374-1733151b4bb8")
-		)
-		(instances
-			(project "WS2812B_Control_PCB"
-				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "WS2812Board:S3B-XH-ALFSN")
 		(at 153.67 120.65 0)
 		(unit 1)
@@ -7940,6 +8480,83 @@
 			(project "WS2812B_Control_PCB"
 				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ee5628d5-ee90-42b9-ac60-2764f754389b")
+		(property "Reference" "#PWR018"
+			(at 69.85 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 85.598 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5ed43be4-6683-4734-8d48-489c7535ddbb")
+		)
+		(instances
+			(project "WS2812B_Control_PCB"
+				(path "/4ea8e1a9-88e3-49cc-a5df-dd549a84e9b3"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
